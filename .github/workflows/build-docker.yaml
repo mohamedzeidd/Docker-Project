@@ -12,4 +12,5 @@ jobs:
           run: docker build -t mohamedzeidd/docker-project:latest .
         - name: push image to dockerhub
           run: 
+            docker login -u mohamedzeidd -p ${{secrets.DOCKER_HUB_TOKEN}}
             docker push mohamedzeidd/docker-project:latest
