@@ -9,7 +9,7 @@ jobs:
         - name: checkout
           uses: actions/checkout/@v4
         - name: build image
-          run: docker build -t mohamedzeidd/Docker-Project:latest
+          run: docker build -t mohamedzeidd/docker-project:latest .
         - name: push image to dockerhub
           run: 
             docker push mohamedzeidd/Docker-Project:latest
